@@ -21,14 +21,14 @@ a:hover {
 h1,
 h2 {
     margin: auto;
-    font-size: 128px;
+    font-size: 118px;
     letter-spacing: 2px;
     font-family: 'Anton', sans-serif;
     text-shadow: 3px 5px 4px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 56px;
 }
 
 .row {
