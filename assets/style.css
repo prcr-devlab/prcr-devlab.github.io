@@ -61,6 +61,7 @@ h5 {
     font-family: 'Anton', sans-serif;
 }
 
+
 .card-text {
     font-family: sans-serif;
     font-size: 14px;
@@ -82,10 +83,21 @@ h5 {
     width: 350px;
 }
 
+.my-card-1:hover {
+    z-index: 9999;
+}
+.my-card-2:hover {
+    z-index: 9999;
+}
+.my-card-3:hover {
+    z-index: 9999;
+}
+
 .card-header {
     width: 100%;
     color: #858585;
     font-size: 12px;
+    text-shadow: none;
 }
 
 
@@ -162,7 +174,7 @@ h5 {
     animation-direction: normal, alternate;
 }
 
-.navbar-toggler {
+/* .navbar-toggler {
     border: none;
     background: transparent !important;
 }
@@ -217,4 +229,4 @@ h5 {
 .navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
     transform: rotate(-45deg) translate(4px, -4px);
     transition: ease all 0.2s;
-}
+} */
