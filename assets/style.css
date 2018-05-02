@@ -71,7 +71,9 @@ h5 {
 .my-container {
     width: 100%;
     margin: auto;
-    overflow: auto;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .img-thumbnail {
@@ -122,6 +124,19 @@ input[type="color"]:focus,
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.6);
   outline: 0 none;
 }
+
+@media only screen and (max-width: 576px) {
+    /* For mobile phones: */
+    [class*="card"] {
+    
+        max-width: 200px;
+    }
+    .img-thumbnail {
+        height: 100px;
+        width: 200px;
+    }
+}
+
 /********* ANIMATIONS *********/
 
 @-webkit-keyframes hvr-bob {
