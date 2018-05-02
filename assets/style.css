@@ -124,7 +124,7 @@ input[type="color"]:focus,
 }
 /********* ANIMATIONS *********/
 
--webkit-keyframes hvr-bob {
+@-webkit-keyframes hvr-bob {
     0% {
         -webkit-transform: translateY(-8px);
         transform: translateY(-8px);
