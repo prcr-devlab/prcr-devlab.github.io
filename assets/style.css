@@ -71,9 +71,19 @@ h5 {
 .my-container {
     width: 100%;
     margin: auto;
-    overflow-y: scroll; /* has to be scroll, not auto */
-    overflow-x: scroll;
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* Make an auto-hiding scroller for the 3 people using a IE */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* For WebKit implementations, provide inertia scrolling */
     -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+    white-space: nowrap;
+    /* Remove the default scrollbar for WebKit implementations */
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .img-thumbnail {
