@@ -74,6 +74,15 @@ h5 {
     overflow-y: scroll; /* has to be scroll, not auto */
     overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    
+}
+
+.container {
+    -ms-overflow-style: none; 
+    overflow: -moz-scrollbars-none;  
+}
+.container::-webkit-scrollbar { 
+    display: none; 
 }
 
 .img-thumbnail {
